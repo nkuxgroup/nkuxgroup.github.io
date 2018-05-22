@@ -1,0 +1,19 @@
+nav{
+    transform: skewY(-2deg);
+    width: 100vw;
+    overflow: hidden;
+    bottom: 90%;
+    padding-top: 80px !important;
+    padding-bottom: 20px !important;
+    margin-top: -60px;
+
+    @include screenSmall{
+        position: fixed !important;
+        height: 160px;
+    }
+
+
+    .container{
+        transform: skewY(2deg);
+    }
+}
