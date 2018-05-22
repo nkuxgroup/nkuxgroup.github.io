@@ -2,6 +2,13 @@ $color-yellow: #FFC72C;
 $color-black: #333;
 $color-dark-grey: #4f4f4f;
 $color-white: #E0E0E0;
+$color-red: #FF5F58;
+$color-blue: #39F;
+$color-purple: #E8B6E3;
+
+.color-red{
+    color: $color-red;
+}
 
 /* 
 Media Queries
@@ -25,6 +32,12 @@ $screen-lg: 1200px;
 @mixin screenLarge {
     @media (min-width: #{$screen-lg}) {
         @content;
+    }
+}
+
+@include screenLarge{
+    .container{
+        max-width: 960px;
     }
 }
 
@@ -61,20 +74,19 @@ h2{
 
 .btn{
     min-width: 170px;
-    // transform: translateY(0px);
     box-shadow: 0 0px 0px $color-dark-grey;
-    transition: all 0.2s;
+    transition: all 0.3s;
 
-    &:hover{
-        // transform: translateY(-2px);
+    &:hover,
+    &:focus{
         box-shadow: 0 3px 10px $color-dark-grey;
-        transition: all 0.2s;
+        transition: all 0.3s;
     }
 }
 
 .btn-outline {
     color: $color-black;
-    border: 2px solid $color-black !important;
+    border: 2px solid $color-black;
     border-radius: 15px;
     background-color: transparent;
     transition: all 0.2s;
@@ -88,13 +100,39 @@ h2{
 
 .btn-black {
     color: $color-white;
-    border: 2px solid $color-black !important;
+    border: 2px solid $color-black;
     border-radius: 15px;
     background-color: $color-black;
     transition: all 0.2s;
     &:hover {
-        color: $color-yellow;
-        background-color: $color-dark-grey;
+        color: $color-black;
+        background-color: $color-white;
+        transition: all 0.2s;
+    }
+}
+
+.btn-red {
+    color: $color-white;
+    border: 2px solid $color-red;
+    border-radius: 15px;
+    background-color: $color-red;
+    transition: all 0.2s;
+    &:hover {
+        color: $color-black;
+        background-color: $color-white;
+        transition: all 0.2s;
+    }
+}
+
+.btn-blue {
+    color: $color-white;
+    border: 2px solid $color-blue;
+    border-radius: 15px;
+    background-color: $color-blue;
+    transition: all 0.2s;
+    &:hover {
+        color: $color-black;
+        background-color: $color-white;
         transition: all 0.2s;
     }
 }
