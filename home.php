@@ -73,7 +73,7 @@
         <p class="mb-4">
             Lorizzle ipsum dolizzle sit my shizz, fizzle adipiscing dawg. Nullam sapien velizzle, aliquet volutpizzle, suscipit quizzle, dawg vel, arcu. Pellentesque doggy crackalackin. Uhuh ... yih!
         </p>
-        <a href="/nkux/contact.php" class="btn btn-yellow">JOIN US</a>
+        <a href="/nkux/events.php" class="btn btn-yellow">JOIN US</a>
     </div>
 </div>
 
