@@ -62,7 +62,7 @@
         </div>
 
         <div class="text-center mt-4">
-            <a href="/nkux/contact.php" class="btn btn-yellow">CONTACT US</a>
+            <a href="contact.php" class="btn btn-yellow">CONTACT US</a>
         </div>
     </div>
 </div>
@@ -73,7 +73,7 @@
         <p class="mb-4">
             Lorizzle ipsum dolizzle sit my shizz, fizzle adipiscing dawg. Nullam sapien velizzle, aliquet volutpizzle, suscipit quizzle, dawg vel, arcu. Pellentesque doggy crackalackin. Uhuh ... yih!
         </p>
-        <a href="/nkux/events.php" class="btn btn-yellow">JOIN US</a>
+        <a href="events.php" class="btn btn-yellow">JOIN US</a>
     </div>
 </div>
 
