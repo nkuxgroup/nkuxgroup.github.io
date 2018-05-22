@@ -1,17 +1,22 @@
 nav{
     transform: skewY(-2deg);
-    width: 100vw;
+    width: 100%;
     overflow: hidden;
-    bottom: 90%;
     padding-top: 80px !important;
     padding-bottom: 20px !important;
     margin-top: -60px;
+    position: fixed !important;
+    height: auto;
+
+    // @include screenSmall{
+    //     position: fixed !important;
+    //     height: 160px;
+    // }
 
     @include screenSmall{
-        position: fixed !important;
         height: 160px;
+        bottom: 90%;
     }
-
 
     .container{
         transform: skewY(2deg);
