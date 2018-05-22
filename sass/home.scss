@@ -3,7 +3,7 @@
 }
 
 #about{
-    margin: 100px auto;
+    padding: 100px 0;
 }
 
 .ux-demo{
@@ -22,3 +22,38 @@
     }
 }
 
+.about-nkux{
+    background-color: $color-light-grey;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.leaders{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    @include screenSmall{
+        flex-direction: row;
+    }
+
+    &-item{
+        img{
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+
+        p{
+            margin: 0;
+        }
+    }
+}
+
+.new-members{
+    padding: 100px 0;
+    background-color: $color-black;
+    color: $color-white;
+}

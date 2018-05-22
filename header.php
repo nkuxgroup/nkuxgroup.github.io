@@ -21,9 +21,9 @@
 		</button>
 		<div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
 			<div class="navbar-nav">
-				<a class="nav-item nav-link" href="#">ABOUT</a>
-				<a class="nav-item nav-link" href="#">EVENTS</a>
-				<a class="nav-item nav-link" href="#">CONTACT</a>
+				<a class="nav-item nav-link" href="/nkux/home.php#about">ABOUT</a>
+				<a class="nav-item nav-link" href="/nkux/events.php">EVENTS</a>
+				<a class="nav-item nav-link" href="/nkux/contact.php">CONTACT</a>
 			</div>
 		</div>
 	</div>

@@ -35,4 +35,46 @@
     </div>
 </div>
 
+<div class="about-nkux">
+    <div class="container">
+        <h1 class="text-center">What is NKUX?</h1>
+        <p class="text-muted text-center">pronounced "nucks"</p>
+        <p class="mt-4">
+            We are a group of super cool people who are interesed in User Experience. We typically meet up and just talk about UX stuff and eat pizza. Sometimes we'll have an even cooler person come to give a presentation about UX. Maybe one day we'll run tests for fun and see what happens. Idk I'm just typing shit. Come talk UX with us!
+        </p>
+        <h1 class="text-center mt-5">NKUX Leaders</h1>
+        <div class="leaders text-center mt-4">
+            <div class="leaders-item">
+                <img src="http://busybridgeng.com/wp-content/uploads/2017/05/generic-avatar.png" alt="NKUX Leader">
+                <p>Webbsy</p>
+                <p>Developerton</p>
+            </div>
+            <div class="leaders-item">
+                <img src="http://busybridgeng.com/wp-content/uploads/2017/05/generic-avatar.png" alt="NKUX Leader">
+                <p>Webbsy</p>
+                <p>Developerton</p>
+            </div>
+            <div class="leaders-item">
+                <img src="http://busybridgeng.com/wp-content/uploads/2017/05/generic-avatar.png" alt="NKUX Leader">
+                <p>Webbsy</p>
+                <p>Developerton</p>
+            </div>
+        </div>
+
+        <div class="text-center mt-4">
+            <a href="/nkux/contact.php" class="btn btn-yellow">CONTACT US</a>
+        </div>
+    </div>
+</div>
+
+<div class="new-members">
+    <div class="container text-center">
+        <h1 class="mb-4">We're always accepting new members!</h1>
+        <p class="mb-4">
+            Lorizzle ipsum dolizzle sit my shizz, fizzle adipiscing dawg. Nullam sapien velizzle, aliquet volutpizzle, suscipit quizzle, dawg vel, arcu. Pellentesque doggy crackalackin. Uhuh ... yih!
+        </p>
+        <a href="/nkux/contact.php" class="btn btn-yellow">JOIN US</a>
+    </div>
+</div>
+
 <?php include 'footer.php';?>

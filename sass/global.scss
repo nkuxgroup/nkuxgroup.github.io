@@ -1,9 +1,11 @@
 $color-yellow: #FFC72C;
 $color-black: #333;
 $color-dark-grey: #4f4f4f;
+$color-light-grey: #EEE;
 $color-white: #E0E0E0;
 $color-red: #FF5F58;
 $color-blue: #39F;
+$color-light-blue: #B6DAE8;
 $color-purple: #E8B6E3;
 
 .color-red{
@@ -74,7 +76,7 @@ h2{
 
 .btn{
     min-width: 170px;
-    box-shadow: 0 0px 0px $color-dark-grey;
+    box-shadow: 0 0px 0px transparent;
     transition: all 0.3s;
 
     &:hover,
@@ -133,6 +135,19 @@ h2{
     &:hover {
         color: $color-black;
         background-color: $color-white;
+        transition: all 0.2s;
+    }
+}
+
+.btn-yellow {
+    color: $color-black;
+    border: 2px solid $color-yellow;
+    border-radius: 15px;
+    background-color: $color-yellow;
+    transition: all 0.2s;
+    &:hover {
+        color: $color-yellow;
+        background-color: $color-black;
         transition: all 0.2s;
     }
 }
