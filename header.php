@@ -12,7 +12,7 @@
 
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-dark">
+<nav class="navbar navbar-expand-lg navbar-dark" data-scroll-header>
 	<div class="container">
 		<a class="navbar-brand" href="index.php">NKUX</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
@@ -21,7 +21,7 @@
 		</button>
 		<div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
 			<div class="navbar-nav">
-				<a class="nav-item nav-link" href="index.php#about">ABOUT</a>
+				<a class="nav-item nav-link" href="index.php#about" data-scroll>ABOUT</a>
 				<a class="nav-item nav-link" href="events.php">EVENTS</a>
 				<a class="nav-item nav-link" href="contact.php">CONTACT</a>
 			</div>
