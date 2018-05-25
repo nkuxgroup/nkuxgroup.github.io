@@ -1,3 +1,69 @@
-.events.hero {
+.events {
     background-color: $color-purple;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.events-header{
+    margin-top: 15vh;
+
+    @include screenSmall{
+        margin-top: 33vh;
+    }
+}
+
+.events-item{
+    background-color: #fff;
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+    img{
+        width: 100%;
+    }
+
+    a{
+        margin-bottom: 0;
+    }
+
+    &-text{
+        padding: 10px;
+    }
+
+    &-title {
+        font-size: 1rem;
+        margin-bottom: 0;
+        font-weight: bold;
+    }
+
+    .addeventatc{
+        font-family: 'Roboto';
+        border: 2px solid $color-black;
+        border-radius: 15px;
+        box-shadow: 0 0px 0px transparent;
+        transition: all 0.3s;
+
+        &:hover,
+        &:focus {
+            font-family: 'Roboto';
+            border: 2px solid $color-black;
+            background-color: $color-light-grey;
+            box-shadow: 0 3px 10px $color-dark-grey;
+            transition: all 0.3s;
+        }
+    }
+
+    .addeventatc_dropdown {
+        font-family: 'Roboto';
+        border: 2px solid $color-black;
+        border-radius: 15px;
+        box-shadow: 0 3px 10px $color-black;
+        transition: all 0.3s;
+
+        span{
+            border-radius: 15px;
+        }
+    }
 }
