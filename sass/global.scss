@@ -1,10 +1,12 @@
 $color-yellow: #FFC72C;
+$color-light-yellow: #ffe8a2;
 $color-black: #333;
 $color-dark-grey: #4f4f4f;
 $color-light-grey: #EEE;
 $color-white: #E0E0E0;
 $color-true-white: #fff;
 $color-red: #FF5F58;
+$color-light-red: #ffb3af;
 $color-blue: #39F;
 $color-light-blue: #B6DAE8;
 $color-purple: #E8B6E3;
@@ -109,7 +111,7 @@ h2{
     transition: all 0.2s;
     &:hover {
         color: $color-black;
-        background-color: $color-true-white;
+        background-color: $color-white;
         transition: all 0.2s;
     }
 }
@@ -122,7 +124,7 @@ h2{
     transition: all 0.2s;
     &:hover {
         color: $color-black;
-        background-color: $color-true-white;
+        background-color: $color-light-red;
         transition: all 0.2s;
     }
 }
@@ -135,7 +137,7 @@ h2{
     transition: all 0.2s;
     &:hover {
         color: $color-black;
-        background-color: $color-true-white;
+        background-color: $color-light-blue;
         transition: all 0.2s;
     }
 }
@@ -147,8 +149,8 @@ h2{
     background-color: $color-yellow;
     transition: all 0.2s;
     &:hover {
-        color: $color-yellow;
-        background-color: $color-black;
+        color: $color-black;
+        background-color: $color-light-yellow;
         transition: all 0.2s;
     }
 }
