@@ -29,10 +29,9 @@
                     
                     <div class="form-group">
                         <label for="exampleFormControlTextarea1">Your Message</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="I'm interested in learning more about NKUX!"></textarea>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="I'm interested in learning more about NKUX!"></textarea>
                     </div>
                     <button type="submit" class="btn btn-yellow">SEND</button>
-                    
                 </div>
             </div>
         </form>
