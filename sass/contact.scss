@@ -1,3 +1,8 @@
-.contact.hero {
+.contact {
     background-color: $color-light-blue;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
 }

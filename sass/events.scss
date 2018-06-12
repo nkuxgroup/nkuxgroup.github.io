@@ -4,14 +4,14 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .events-header{
     margin-top: 15vh;
 
     @include screenSmall{
-        margin-top: 33vh;
+        margin-top: 25vh;
     }
 }
 
@@ -58,17 +58,17 @@
             box-shadow: 0 3px 10px $color-dark-grey;
             transition: all 0.3s;
         }
-    }
 
-    .addeventatc_dropdown {
-        font-family: 'Roboto';
-        border: 2px solid $color-black;
-        border-radius: 15px;
-        box-shadow: 0 3px 10px $color-black;
-        transition: all 0.3s;
-
-        span{
+        .addeventatc_dropdown {
+            height: auto;
+            font-family: 'Roboto';
+            border: 2px solid $color-black;
             border-radius: 15px;
+            box-shadow: 0 3px 10px $color-black;
+            transition: all 0.3s;
+            span {
+                border-radius: 15px;
+            }
         }
     }
 }

@@ -3,6 +3,7 @@ $color-black: #333;
 $color-dark-grey: #4f4f4f;
 $color-light-grey: #EEE;
 $color-white: #E0E0E0;
+$color-true-white: #fff;
 $color-red: #FF5F58;
 $color-blue: #39F;
 $color-light-blue: #B6DAE8;
@@ -108,7 +109,7 @@ h2{
     transition: all 0.2s;
     &:hover {
         color: $color-black;
-        background-color: $color-white;
+        background-color: $color-true-white;
         transition: all 0.2s;
     }
 }
@@ -121,7 +122,7 @@ h2{
     transition: all 0.2s;
     &:hover {
         color: $color-black;
-        background-color: $color-white;
+        background-color: $color-true-white;
         transition: all 0.2s;
     }
 }
@@ -134,7 +135,7 @@ h2{
     transition: all 0.2s;
     &:hover {
         color: $color-black;
-        background-color: $color-white;
+        background-color: $color-true-white;
         transition: all 0.2s;
     }
 }
