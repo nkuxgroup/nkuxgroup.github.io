@@ -18,16 +18,16 @@
 
 <nav class="navbar navbar-expand-lg navbar-dark" data-scroll-header>
 	<div class="container">
-		<a class="navbar-brand" href="index.php">NKUX</a>
+		<a class="navbar-brand" href="index.html">NKUX</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
 			aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
 		<div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
 			<div class="navbar-nav">
-				<a class="nav-item nav-link" href="index.php#about" data-scroll>ABOUT</a>
-				<a class="nav-item nav-link" href="events.php">EVENTS</a>
-				<a class="nav-item nav-link" href="contact.php">CONTACT</a>
+				<a class="nav-item nav-link" href="index.html#about" data-scroll>ABOUT</a>
+				<a class="nav-item nav-link" href="events.html">EVENTS</a>
+				<a class="nav-item nav-link" href="contact.html">CONTACT</a>
 			</div>
 		</div>
 	</div>
@@ -39,7 +39,7 @@
         <h2>The NKU User Experience Group</h2>
         <div class="d-flex flex-sm-row flex-column justify-content-center mt-2">
             <a href="#about" class="btn btn-outline m-2" data-scroll>LEARN MORE</a>
-            <a href="events.php" class="btn btn-black m-2">JOIN US</a>
+            <a href="events.html" class="btn btn-black m-2">JOIN US</a>
         </div>
     </div>
 </div>
@@ -95,7 +95,7 @@
         </div>
 
         <div class="text-center mt-4">
-            <a href="contact.php" class="btn btn-yellow">CONTACT US</a>
+            <a href="contact.html" class="btn btn-yellow">CONTACT US</a>
         </div>
     </div>
 </div>
@@ -106,8 +106,31 @@
         <p class="mb-4">
             Lorizzle ipsum dolizzle sit my shizz, fizzle adipiscing dawg. Nullam sapien velizzle, aliquet volutpizzle, suscipit quizzle, dawg vel, arcu. Pellentesque doggy crackalackin. Uhuh ... yih!
         </p>
-        <a href="events.php" class="btn btn-yellow">JOIN US</a>
+        <a href="events.html" class="btn btn-yellow">JOIN US</a>
     </div>
 </div>
 
-<?php include 'footer.php';?>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@14.2.0/dist/smooth-scroll.min.js"></script>
+<script>
+	var scroll = new SmoothScroll('a[href*="#"]', {
+		header: '[data-scroll-header]'
+	});
+
+	$(document).ready(function () {
+		$('.ux-demo button').click(function() {
+			console.log("Clicked");
+			
+			var counter = parseInt($(this).next().children('b').html());
+			console.log(counter);
+			
+			counter = counter + 1;
+			console.log("new "+counter);
+		});
+	});
+</script>
+</body>
+
+</html>
