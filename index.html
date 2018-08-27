@@ -53,17 +53,17 @@
         <div class="ux-demo mt-5">
             <div class="ux-demo-item">
                 <button class="btn btn-black">CLICK ME</button>
-                <p>I was clicked <b>20</b> times!</p>
+                <p>I was clicked <b class="btn-black-score">20</b> times!</p>
             </div>
             <div class="ux-demo-item">
                 <button class="btn btn-red">CLICK ME</button>
-                <p>I was clicked <b>23</b> times!</p>
+                <p>I was clicked <b class="btn-red-score">23</b> times!</p>
             </div>
             <div class="ux-demo-item">
                 <button class="btn btn-blue">CLICK ME</button>
-                <p>I was clicked <b>19</b> times!</p>
+                <p>I was clicked <b class="btn-blue-score">19</b> times!</p>
             </div>
-            <p>The <b class="color-red">red button</b> has the most interaction!</p>
+            <p class="ux-score">The <b class="color-red">red button</b> has the most interaction!</p>
         </div>
     </div>
 </div>
@@ -110,15 +110,68 @@
 	});
 
 	$(document).ready(function () {
-		$('.ux-demo button').click(function() {
-			console.log("Clicked");
-			
-			var counter = parseInt($(this).next().children('b').html());
-			console.log(counter);
-			
-			counter = counter + 1;
-			console.log("new "+counter);
+        //create array of buttons
+        var btnArray = [
+            {name: "Black Button", clicks: 0},
+            {name: "Red Button", clicks: 0},
+            {name: "Blue Button", clicks: 0}
+        ];
+
+        //make a random inital score on page laod
+        for (let i = 0; i < btnArray.length; i++) {
+            btnArray[i].clicks = Math.floor(Math.random() * (25 - 0)) + 0;
+        }
+
+        //do the inital rank
+        btnRank();
+        console.log(btnArray);
+
+        //update the individual scores.
+        $('.btn-black-score').text(btnArray[0].clicks);
+        $('.btn-red-score').text(btnArray[1].clicks);
+        $('.btn-blue-score').text(btnArray[2].clicks);
+
+        //watch for clicks on buttons then re-rank
+		$('.ux-demo .btn-black').click(function() {
+            btnArray[0].clicks++;
+            $('.btn-black-score').text(btnArray[0].clicks);
+            btnRank();
 		});
+        $('.ux-demo .btn-red').click(function() {
+			btnArray[1].clicks++;
+            $('.btn-red-score').text(btnArray[1].clicks);
+            btnRank();
+		});
+        $('.ux-demo .btn-blue').click(function() {
+			btnArray[2].clicks++;
+            $('.btn-blue-score').text(btnArray[2].clicks);
+            btnRank();
+		});
+        
+        //check for most clicked button and update text
+        function btnRank() {
+            var mostClicks = 0;
+            var scoreText = $('.ux-score b');
+            for (let i = 0; i < btnArray.length; i++) {
+                const btn = btnArray[i];
+                if (btn.clicks > mostClicks) {
+                    mostClicks = btn.clicks;
+                    scoreText.text(btn.name);
+                    if (btn.name == "Black Button") {
+                        scoreText.removeClass();
+                        scoreText.addClass('color-black');
+                    }
+                    if (btn.name == "Red Button") {
+                        scoreText.removeClass();
+                        scoreText.addClass('color-red');
+                    }
+                    if (btn.name == "Blue Button") {
+                        scoreText.removeClass();
+                        scoreText.addClass('color-blue');
+                    }
+                }
+            }
+        }
 	});
 </script>
 </body>

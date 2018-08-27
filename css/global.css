@@ -1,0 +1,105 @@
+.color-black {
+  color: #333; }
+
+.color-red {
+  color: #FF5F58; }
+
+.color-blue {
+  color: #39F; }
+
+/* 
+Media Queries
+========================================================================== */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 960px; } }
+.hero {
+  width: 100%;
+  height: 100vh; }
+
+.hero-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+
+* {
+  font-family: 'Open Sans';
+  font-family: 'Roboto';
+  letter-spacing: 1px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+h1 {
+  font-size: 28px; }
+
+h2 {
+  font-size: 24px;
+  font-weight: lighter; }
+
+.btn {
+  min-width: 170px;
+  box-shadow: 0 0px 0px transparent;
+  transition: all 0.3s; }
+  .btn:hover, .btn:focus {
+    box-shadow: 0 3px 10px #4f4f4f;
+    transition: all 0.3s; }
+
+.btn-outline {
+  color: #333;
+  border: 2px solid #333;
+  border-radius: 15px;
+  background-color: transparent;
+  transition: all 0.2s; }
+  .btn-outline:hover {
+    color: #FFC72C;
+    background-color: #333;
+    transition: all 0.2s; }
+
+.btn-black {
+  color: #E0E0E0;
+  border: 2px solid #333;
+  border-radius: 15px;
+  background-color: #333;
+  transition: all 0.2s; }
+  .btn-black:hover {
+    color: #333;
+    background-color: #E0E0E0;
+    transition: all 0.2s; }
+
+.btn-red {
+  color: #E0E0E0;
+  border: 2px solid #FF5F58;
+  border-radius: 15px;
+  background-color: #FF5F58;
+  transition: all 0.2s; }
+  .btn-red:hover {
+    color: #333;
+    background-color: #ffb3af;
+    transition: all 0.2s; }
+
+.btn-blue {
+  color: #E0E0E0;
+  border: 2px solid #39F;
+  border-radius: 15px;
+  background-color: #39F;
+  transition: all 0.2s; }
+  .btn-blue:hover {
+    color: #333;
+    background-color: #B6DAE8;
+    transition: all 0.2s; }
+
+.btn-yellow {
+  color: #333;
+  border: 2px solid #FFC72C;
+  border-radius: 15px;
+  background-color: #FFC72C;
+  transition: all 0.2s; }
+  .btn-yellow:hover {
+    color: #333;
+    background-color: #ffe8a2;
+    transition: all 0.2s; }
+
+/*# sourceMappingURL=global.css.map */
